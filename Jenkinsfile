@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Checkout From Git') {
             steps {
-                git branch: 'main', url: 'https://github.com/yovazbz/dotnet-devops.git'
+                git branch: 'master', url: 'https://github.com/yovazbz/dotnet-devops.git'
             }
         }
         stage("Sonarqube Analysis ") {
